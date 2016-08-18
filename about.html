@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>关于</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/subCommon.css">
+    <script src="lib/modernizr.min.js"></script>
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/three.min.js"></script>
+    <script src="lib/TweenLite.min.js"></script>
+    <script src="lib/easing/EasePack.min.js"></script>
+    <script src="js/subCommon.js"></script>
+    <script src="js/tool/threeGroupLoader.js"></script>
+    <script src="js/tool/dataTool.js"></script>
+    <script src="js/about.js"></script>
+    <script src="http://widget.renren.com/js/rrshare.js"></script>
+    <script src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js"></script>
+    <script>
+        var about;
+		$(document).ready(function(){
+            new jd.SubCommon();
+            if(Modernizr.webgl)
+            {
+                //支持webgl
+                init();
+            }
+            else
+            {
+                //不支持webgl
+            }
+		});
+
+        function init()
+        {
+            about = new jd.About();
+            animate();
+        }
+
+        function animate()
+        {
+            requestAnimationFrame(animate);
+            about.render();
+        }
+    </script>
+</head>
+<body>
+    <div id="container3d"></div>
+    <div class="contentContainer">
+        <!--<img class="contentPanel" src="images/about/intro.png" width="1083" height="441"/>-->
+        <div class="sharePanel">
+            <div class="shareTitle">分享:</div>
+            <div class="iconContainer">
+                <div class="icon weibo"></div>
+                <div class="icon qzone"></div>
+                <div class="icon qq"></div>
+                <div class="icon renren"></div>
+            </div>
+        </div>
+    </div>
+    <div class="shader">
+        <!-- Custom shaders for particle effects -->
+        <script type="x-shader/x-vertex" id="vertexshader">
+			//uniform float amplitude;
+			attribute float size;
+			attribute vec3 customColor;
+			varying vec3 vColor;
+			attribute float customOpacity;
+			varying float vOpacity;
+			void main() {
+				vColor = customColor;
+				vOpacity = customOpacity;
+				vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+				gl_PointSize = size;
+				gl_Position = projectionMatrix * mvPosition;
+			}
+		</script>
+        <script type="x-shader/x-fragment" id="fragmentshader">
+			uniform vec3 color;
+			uniform float opacity;
+			uniform sampler2D texture;
+			varying vec3 vColor;
+			varying float vOpacity;
+			void main() {
+				gl_FragColor = vec4( color * vColor, opacity*vOpacity );
+				gl_FragColor = gl_FragColor * texture2D( texture, gl_PointCoord );
+			}
+		</script>
+        <!-- end of custom shaders -->
+    </div>
+</body>
+</html>

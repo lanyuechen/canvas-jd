@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>京东双十一</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <script src="lib/modernizr.min.js"></script>
+    <script src="lib/TweenLite.min.js"></script>
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/jquery.mousewheel.js"></script>
+    <script src="js/tool/contentScrollPanel.js"></script>
+    <script src="js/tool/dataTool.js"></script>
+    <script src="js/tool/dataTool_3c.js"></script>
+    <script src="js/tool/dataTool_sum.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+            new jd.Mainframe();
+        });
+    </script>
+</head>
+<body>
+    <div class="subContainer">
+        <iframe id="wbstSubFrame" src="3c.html" allowtransparency="true" title="test" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+    </div>
+    <div class="dashboardContainer">
+        <div class="mask">
+            <div class="scrollPanel">
+                <img class="jdLogo" src="images/jdLogo.png"/>
+                <img class="title" src="images/index/title.png" width="496" height="51"/>
+                <div class="itemContainer">
+                    <div class="item c3" suburl="3c.html">
+                        <div class="txt">11.01——11.11期间京东3C整体销量突破&nbsp;<span class="strongNum">0</span>&nbsp;件</div>
+                        <div class="num">0</div>
+                    </div>
+                    <div class="item phone_1" suburl="phone_1.html">
+                        <div class="txt">11月1日-11日期间，京东手机销量突破&nbsp;<span class="strongNum"> 0</span>&nbsp;台</div>
+                        <div class="num">0</div>
+                    </div>
+                    <div class="item phone_2" suburl="phone_2.html">
+                        <div class="txt">11月1日-11日期间，京东手机销量TOP10品牌榜</div>
+                    </div>
+                    <div class="item phone_3" suburl="phone_3.html">
+                        <div class="txt">11月1日-11日期间，京东手机销售额TOP3品牌榜</div>
+                    </div>
+                    <div class="item phone_4" suburl="phone_4.html">
+                        <div class="txt">11月1日-11日每天京东手机销量TOP10品牌榜</div>
+                    </div>
+                    <div class="item it_1" suburl="it_1.html">
+                        <div class="txt">11月1日-11日期间，京东电脑（笔记本、台式电脑）销量突破&nbsp;<span class="strongNum">0</span>&nbsp;台，销量TOP8品牌榜</div>
+                    </div>
+                    <div class="item it_2" suburl="it_2.html">
+                        <div class="txt">11月1日-11日期间，京东办公设备销量突破&nbsp;<span class="strongNum">0</span>&nbsp;件，销量TOP8品牌榜</div>
+                    </div>
+                    <div class="item it_3" suburl="it_3.html">
+                        <div class="txt">11月1日-11日期间，硬盘类整体销量突破&nbsp;<span class="strongNum">0</span>&nbsp;件，销量TOP5品牌榜</div>
+                    </div>
+                    <div class="item it_4" suburl="it_4.html">
+                        <div class="txt">11月1日当日京东笔记本销售量TOP5品牌榜</div>
+                    </div>
+                    <div class="item it_5" suburl="digital_3.html">
+                        <div class="txt">11月1日-11日，京东电脑（笔记本、台式电脑）销售额TOP3品牌榜</div>
+                    </div>
+                    <div class="item digital_1" suburl="digital_1.html">
+                        <div class="txt">11月1日-11日期间，京东平板销量突破&nbsp;<span class="strongNum">0</span>&nbsp;台，销量TOP5品牌榜</div>
+                    </div>
+                    <div class="item digital_2" suburl="digital_2.html">
+                        <div class="txt">11月1日-11日期间，京东相机销售量TOP5品牌榜</div>
+                    </div>
+                </div>
+                <img class="slogan" src="images/slogan.png" width="203" height="38"/>
+            </div>
+        </div>
+        <div class="scrollBar">
+            <div class="dragger"></div>
+        </div>
+    </div>
+    <div class="navPanel">
+        <div class="nav allNav">
+            <img src="images/index/all_over.png" width="60" height="50"/>
+        </div>
+        <div class="nav phoneNav">
+            <img src="images/index/phone_over.png" width="60" height="50"/>
+        </div>
+        <div class="nav itNav">
+            <img src="images/index/it_over.png" width="60" height="50"/>
+        </div>
+        <div class="nav digitalNav">
+            <img src="images/index/digital_over.png" width="60" height="50"/>
+        </div>
+        <div class="nav aboutNav">
+            <img src="images/index/about_over.png" width="60" height="50"/>
+        </div>
+    </div>
+    <div class="subNavContainer">
+        <div class="subNavScrollPanel">
+            <div class="subNavGroup">
+                <div class="subNavTitle">
+                    <div class="icon"><img src="images/index/phoneIcon.png"/> </div>
+                    <div class="txt">手机类数据</div>
+                </div>
+                <!--<div class="subNav" suburl="3c.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">3C整体销量</div>
+                </div>-->
+                <div class="subNav"  suburl="phone_1.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间手机总销量</div>
+                </div>
+                <div class="subNav"  suburl="phone_2.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间手机累计销量TOP10品牌榜</div>
+                </div>
+                <div class="subNav"  suburl="phone_3.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间手机销售额累计TOP3品牌榜</div>
+                </div>
+                <!--<div class="subNav"  suburl="phone_4.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间每日手机销量TOP10品牌榜</div>
+                </div>-->
+            </div>
+            <div class="subNavGroup">
+                <div class="subNavTitle">
+                    <div class="icon"><img src="images/index/itIcon.png"/></div>
+                    <div class="txt">IT类数据</div>
+                </div>
+                <div class="subNav"  suburl="it_1.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间电脑累计销量TOP8品牌榜</div>
+                </div>
+                <div class="subNav"  suburl="it_2.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间办公设备累计销量TOP8品牌榜</div>
+                </div>
+                <div class="subNav"  suburl="it_3.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间硬盘累计销量TOP5品牌榜</div>
+                </div>
+                <div class="subNav"  suburl="it_4.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">11.11笔记本销量TOP5品牌榜</div>
+                </div>
+                <div class="subNav"  suburl="digital_3.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间电脑累计销售额TOP3品牌榜</div>
+                </div>
+            </div>
+            <div class="subNavGroup">
+                <div class="subNavTitle">
+                    <div class="icon"><img src="images/index/digitalIcon.png"/></div>
+                    <div class="txt">数码类数据</div>
+                </div>
+                <div class="subNav"  suburl="digital_1.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间平板累计销量TOP5品牌榜</div>
+                </div>
+                <div class="subNav"  suburl="digital_2.html">
+                    <div class="titleArrow"></div>
+                    <div class="txt">双十一期间相机累计销量TOP5品牌榜</div>
+                </div>
+            </div>
+        </div>
+        <img class="leftArrow" src="images/index/leftArrow.png"/>
+        <img class="rightArrow" src="images/index/rightArrow.png"/>
+    </div>
+</body>
+</html>

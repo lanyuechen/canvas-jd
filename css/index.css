@@ -1,0 +1,422 @@
+body
+{
+    background-image: url("../images/bg.jpg");
+    background-size:cover;
+}
+img
+{
+    border: none;
+}
+.subContainer
+{
+    width: 100%;
+    height: 100%;
+}
+.navPanel
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -120px;
+}
+.navPanel .nav
+{
+    width: 60px;
+    height: 50px;
+    margin-top: 1px;
+    cursor: pointer;
+    clear: both;
+}
+.navPanel .nav:hover img
+{
+    opacity: 1;
+}
+.navPanel .nav img
+{
+    opacity: 0;
+    -moz-transition:opacity 0.5s ease-out;
+    -webkit-transition:opacity 0.5s ease-out;
+    -o-transition:opacity 0.5s ease-out;
+    transition:opacity 0.5s ease-out;
+}
+.navPanel .allNav
+{
+    background: url("../images/index/all_out.png") no-repeat;
+}
+.navPanel .phoneNav
+{
+    background: url("../images/index/phone_out.png") no-repeat;
+}
+.navPanel .itNav
+{
+    background: url("../images/index/it_out.png") no-repeat;
+}
+.navPanel .digitalNav
+{
+    background: url("../images/index/digital_out.png") no-repeat;
+}
+.navPanel .aboutNav
+{
+    background: url("../images/index/about_out.png") no-repeat;
+}
+.subNavContainer
+{
+    position: absolute;
+    /*left: 60px;*/
+    top:0;
+    width: 350px;
+    height: 0;
+    opacity: 0;
+    background: rgba(8,42,55,0.9);
+    border:solid #0b698c 1px;
+    overflow: hidden;
+    -moz-transition:all 0.5s ease-out;
+    -webkit-transition:all 0.5s ease-out;
+    -o-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+}
+.subNavContainer .leftArrow
+{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.subNavContainer .rightArrow
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.subNavContainer .subNavScrollPanel
+{
+    position: absolute;
+    width: 1500px;
+    height: 500px;
+    -moz-transition:left 0.3s ease-out;
+    -webkit-transition:left 0.3s ease-out;
+    -o-transition:left 0.3s ease-out;
+    transition:left 0.3s ease-out;
+}
+.subNavContainer .subNavGroup
+{
+    width: 380px;
+    float: left;
+}
+.subNavContainer .subNavGroup .subNavTitle
+{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    font-size: 18px;
+    overflow: hidden;
+    clear:both;
+}
+.subNavContainer .subNavGroup .subNavTitle .icon
+{
+    float: left;
+    margin-left: 20px;
+}
+.subNavContainer .subNavGroup .subNavTitle .txt
+{
+    float: left;
+    margin-left:10px;
+}
+.subNavContainer .subNavGroup .subNav
+{
+    color: #0eb5f3;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-top: solid #0b698c 1px;;
+    cursor: pointer;
+    overflow: hidden;
+    -moz-transition:background 1s ease-out,color 1s ease-out;
+    -webkit-transition:background 1s ease-out,color 1s ease-out;
+    -o-transition:background 1s ease-out,color 1s ease-out;
+    transition:background 1s ease-out,color 1s ease-out;
+}
+.subNav .titleArrow
+{
+    float: left;
+    width: 20px;
+    height: 100%;
+    background: url("../images/index/titleArrow.png") no-repeat center;
+    opacity: 0;
+    -moz-transition:opacity 0.8s ease-out;
+    -webkit-transition:opacity 0.8s ease-out;
+    -o-transition:opacity 0.8s ease-out;
+    transition:opacity 0.8s ease-out;
+}
+.subNav .txt
+{
+    float: left;
+}
+
+#subFrame
+{
+    background-color:transparent;
+}
+
+/*====================================================================================*/
+.dashboardContainer
+{
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    background: url("../images/index/bg.jpg") no-repeat;
+    background-size:cover;
+}
+
+.dashboardContainer .jdLogo
+{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    height: 5%;
+}
+
+.dashboardContainer .mask
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.dashboardContainer .mask .scrollPanel
+{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.dashboardContainer .mask .scrollPanel .title
+{
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+.dashboardContainer .scrollBar
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: 620px;
+    width: 6px;
+    height: 400px;
+    background-color: rgba(255,255,255,0.1);
+    overflow: hidden;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius:5px;
+}
+
+.dashboardContainer .scrollBar .dragger
+{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(180,24,36,1);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius:5px;
+}
+
+.dashboardContainer .itemContainer
+{
+    position: relative;
+    margin: 50px auto 0 auto;
+    width: 1213px;
+    height: 640px;
+    overflow: hidden;
+    clear: both;
+}
+
+.dashboardContainer .slogan
+{
+    float: right;
+    margin: 40px 25px 35px auto ;
+}
+
+.itemContainer .item
+{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    border: solid 1px #585862;
+    cursor: pointer;
+    overflow: hidden;
+    -moz-transition:background 1s ease-out;
+    -webkit-transition:background 1s ease-out;
+    -o-transition:background 1s ease-out;
+    transition:background 1s ease-out;
+}
+.itemContainer .item:hover
+{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.itemContainer .item .txt
+{
+    margin-top: 10px;
+    margin-left: 48px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.itemContainer .item .txt .strongNum
+{
+    font-family: Arial;
+    color: #c91523;
+}
+
+.itemContainer .c3
+{
+    left: 0;
+    top:0;
+    width: 475px;
+    height: 200px;
+    background-image: url("../images/index/item_3c.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .c3 .txt
+{
+    width: 230px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.itemContainer .c3 .txt .strongNum
+{
+    font-size: 30px;
+}
+.itemContainer .c3 .num
+{
+    position: absolute;
+    left: 320px;
+    top:112px;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ff0000;
+
+}
+.itemContainer .phone_1
+{
+    left: 490px;
+    top: 0px;
+    background-image: url("../images/index/item_phone_1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.itemContainer .phone_1 .num
+{
+    position: absolute;
+    left: 80px;
+    top:85px;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ff0000;
+
+}
+.itemContainer .phone_2
+{
+    left: 735px;
+    top: 0;
+    background-image: url("../images/index/item_phone_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .phone_3
+{
+    left: 0;
+    top: 215px;
+    height: 415px;
+    background-image: url("../images/index/item_phone_3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .phone_4
+{
+    left: 980px;
+    top: 0px;
+    background-image: url("../images/index/item_phone_4.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .it_1
+{
+    top: 215px;
+    left: 245px;
+    background-image: url("../images/index/item_it_1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .it_2
+{
+    left: 980px;
+    top: 215px;
+    background-image: url("../images/index/item_it_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .it_3
+{
+    left: 245px;
+    top: 430px;
+    background-image: url("../images/index/item_it_3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .it_4
+{
+    left: 490px;
+    top: 430px;
+    background-image: url("../images/index/item_it_4.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .it_5
+{
+    top:215px;
+    left: 490px;
+    width: 475px;
+    background-image: url("../images/index/item_it_5.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .digital_1
+{
+    left: 735px;
+    top: 430px;
+    background-image: url("../images/index/item_digital_1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.itemContainer .digital_2
+{
+    left: 980px;
+    top: 430px;
+    background-image: url("../images/index/item_digital_2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
