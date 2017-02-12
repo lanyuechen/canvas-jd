@@ -181,19 +181,19 @@ this.jd = this.jd||{};
     {
         this.initCC();
         this.initContainer();
-        this.createTitle();
+        //this.createTitle();
         this.createParticleMaterial();
         this.createParticle();
         this.createCir();
-        this.createSubTitle();
-        this.createNum();
+        //this.createSubTitle();
+        //this.createNum();
         this.createBgParticle();
         //this.createBgLine();
         //this.bgLineAppear();
 
         //this.createTitleSum();
-        this.createTip();
-        this.createTxt3c();
+        //this.createTip();
+        //this.createTxt3c();
     };
 
     p.render = function()
@@ -440,7 +440,7 @@ this.jd = this.jd||{};
         this.createDotCir();
         this.createArrowCir();
         this.createDateMC();
-        this.cirAppear();
+        //this.cirAppear();
     };
 
     p.cirAppear = function()

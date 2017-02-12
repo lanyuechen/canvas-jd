@@ -25,6 +25,7 @@ body
 
 .jdLogo
 {
+    display: none;
 	position: absolute;
     left: 15px;
     top: 20px;
@@ -33,6 +34,7 @@ body
 
 .slogan
 {
+    display: none;
     position: absolute;
     right: 25px;
     bottom: 30px;
@@ -54,7 +56,7 @@ body
     margin-top: -60px;
     width: 120px;
     height: 120px;
-    background-image: url("../images/loadingBg.png");
+    background-image: url("../images/null.png");
     background-repeat: no-repeat;
     background-position: center center;
 }
